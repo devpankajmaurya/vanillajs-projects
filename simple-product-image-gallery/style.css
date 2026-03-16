@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+#mainImage {
+    max-width: 400px;
+}
+
+.thumbnailImage {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.thumbnailImage > img {
+    height: 60px;
+    cursor: pointer;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.mainSection > button {
+    width: 100px;
+}
