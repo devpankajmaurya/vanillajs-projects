@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background: lightgreen;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#todo {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px;
+    background-color: lightgreen;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+#input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#clickBtn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#submit, #reset {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+#submit {
+    background-color: #000000d1;
+    color:  white;
+}
+
+#reset {
+    background-color:rgba(239, 51, 41, 0.905);
+}
+
+#submit:hover {
+    background-color: #000000;
+}
+
+#reset:hover {
+    background-color: red;
+}
+
+#count {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#listCount {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+    #todo {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    #ul > li {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #submit, #reset {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    header {
+        font-size: 24px;
+    }
+
+    #todo {
+        max-width: 600px;
+        padding: 25px;
+    }
+
+    #ul > li {
+        font-size: 18px;
+    }
+}
